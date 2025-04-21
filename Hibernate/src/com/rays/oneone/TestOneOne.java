@@ -11,14 +11,14 @@ public class TestOneOne {
 
 		Address empAddress = new Address();
 
-		empAddress.setId(1);
-		empAddress.setStreet("street1");
+		//empAddress.setId(1);
+		empAddress.setStreet("street2");
 		empAddress.setCity("indore");
 
 		Employee e = new Employee();
 
-		e.setId(1);
-		e.setName("abc");
+		//e.setId(1);
+		e.setName("xyz");
 		e.setEmpAddress(empAddress);
 
 		SessionFactory sf = new Configuration().configure().buildSessionFactory();
@@ -28,6 +28,7 @@ public class TestOneOne {
 		Transaction tx = session.beginTransaction();
 
 		session.save(e);
+		session.save(empAddress);
 
 		tx.commit();
 

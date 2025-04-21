@@ -6,7 +6,8 @@
     <class name="com.rays.auction.AuctionItem" table="AUCTIONITEM">
         <id name="id" type="int">
             <column name="ID" />
-            <generator class="assigned" />
+            <!-- <generator class="assigned" /> -->
+            <generator class="increment" />
         </id>
       <set name="bids" table="AUCTIONITEM" cascade="all" lazy="true">
 			<key>

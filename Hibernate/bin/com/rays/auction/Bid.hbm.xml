@@ -6,7 +6,8 @@
     <class name="com.rays.auction.Bid" table="BID">
         <id name="id" type="int">
             <column name="ID" />
-            <generator class="assigned" />
+            <generator class="increment" />
+            <!--  <generator class="assigned" /> -->
         </id>
         <property name="amount" type="int">
             <column name="AMOUNT" />

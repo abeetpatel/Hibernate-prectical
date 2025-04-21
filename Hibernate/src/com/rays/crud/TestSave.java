@@ -14,7 +14,7 @@ public class TestSave {
 	public static void main(String[] args) {
 
 		UserDTO dto = new UserDTO();
-		//dto.setId(2);
+		dto.setId(1);
 		dto.setFirstName("abc");
 		dto.setLastName("abc");
 		dto.setLoginId("abc@gmail.com");

@@ -14,7 +14,7 @@ public class TestUpdate {
 	public static void main(String[] args) {
 
 		UserDTO dto = new UserDTO();
-		dto.setId(3);
+		dto.setId(1);
 		dto.setFirstName("yogesh");
 		dto.setLastName("sen");
 		dto.setLoginId("yogesh@gmail.com");

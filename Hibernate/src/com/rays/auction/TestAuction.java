@@ -13,17 +13,17 @@ public class TestAuction {
 	public static void main(String[] args) {
 
 		Bid bid1 = new Bid();
-		bid1.setId(1);
+		//bid1.setId(4);
 		bid1.setAmount(1000);
 		bid1.setTimeStamp("A");
 
 		Bid bid2 = new Bid();
-		bid2.setId(2);
+		//bid2.setId(5);
 		bid2.setAmount(2000);
 		bid2.setTimeStamp("AA");
 
 		Bid bid3 = new Bid();
-		bid3.setId(3);
+		//bid3.setId(6);
 		bid3.setAmount(3000);
 		bid3.setTimeStamp("AAA");
 
@@ -34,12 +34,12 @@ public class TestAuction {
 		bids.add(bid3);
 
 		AuctionItem item = new AuctionItem();
-		item.setId(1);
+		//item.setId(2);
 		item.setDescription("auction 1");
 		item.setBids(bids);
 
 		SessionFactory sf = new Configuration().configure().buildSessionFactory();
-
+		
 		Session session = sf.openSession();
 
 		Transaction tx = session.beginTransaction();

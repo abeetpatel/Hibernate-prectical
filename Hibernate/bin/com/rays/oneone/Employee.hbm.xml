@@ -6,7 +6,8 @@
     <class name="com.rays.oneone.Employee" table="EMPLOYEE">
         <id name="id" type="int">
             <column name="ID" />
-            <generator class="assigned" />
+          <generator class="increment" />
+            <!-- <generator class="assigned" /> -->
         </id>
         <property name="name" type="java.lang.String">
             <column name="NAME" />

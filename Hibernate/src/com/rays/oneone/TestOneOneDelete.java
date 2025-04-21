@@ -16,8 +16,10 @@ public class TestOneOneDelete {
 		Transaction tx = session.beginTransaction();
 
 		Employee e = (Employee) session.get(Employee.class, 1);
+		Address a = (Address) session.get(Address.class, 1);
 
 		session.delete(e);
+		session.delete(a);
 
 		tx.commit();
 

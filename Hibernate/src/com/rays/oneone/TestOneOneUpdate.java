@@ -16,10 +16,10 @@ public class TestOneOneUpdate {
 		Employee e = (Employee) session.get(Employee.class, 1);
 
 		if (e != null) {
-			e.setName("abc");
+			e.setName("pqr");
 			
 			Address empAddress = e.getEmpAddress();
-			empAddress.setStreet("street2");
+			empAddress.setStreet("street1");
 			empAddress.setCity("indore");
 		} else {
 			System.out.println("Employee not found!");
